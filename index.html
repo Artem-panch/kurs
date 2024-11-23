@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Сучасна Пекарня</title>
+		<title>Сучасна пекарня</title>
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -34,7 +34,7 @@
 			<section class="hero-section">
 				<div class="container">
 					<h1 class="hero-title">
-						<span class="accent">Сучасна</span> Пекарня
+						<span class="accent">Сучасна</span> пекарня
 					</h1>
 				</div>
 			</section>
@@ -67,7 +67,10 @@
 								наших пекарень стильний дизайн та висока якість обслуговування!
 							</p>
 						</div>
-						<img src="./images/Mask-group.jpg" alt="Пекар чоловік" />
+						<img
+							class="pecar"
+							src="./images/Mask-group.jpg"
+							alt="Пекар чоловік" />
 					</div>
 				</div>
 			</section>
@@ -178,6 +181,53 @@
 						<div class="contact-form">
 							<h2 class="section-title">Приєднуйся до мережі пекарень</h2>
 							<p>Заповни форму, щоб ми звʼязались з тобою!</p>
+							<form name="contact-form" autocomplete="off">
+								<div class="form-field">
+									<label class="form-label visually-hidden" for="user-name"
+										>Ім'я</label
+									>
+									<input
+										class="form-input"
+										type="text"
+										id="user-name"
+										name="user-name"
+										placeholder="Ім'я" />
+								</div>
+
+								<div class="form-field">
+									<label class="form-label visually-hidden" for="user-tel"
+										>Телефон</label
+									>
+									<input
+										class="form-input"
+										type="tel"
+										id="user-tel"
+										name="user-tel"
+										placeholder="Телефон" />
+								</div>
+
+								<div class="form-field">
+									<label class="form-label visually-hidden" for="user-email"
+										>Електронна адреса</label
+									>
+									<input
+										class="form-input"
+										type="email"
+										id="user-email"
+										name="user-email"
+										placeholder="Електронна адреса" />
+								</div>
+
+								<button class="form-button button" type="submit">
+									Замовити дзвінок
+								</button>
+								<p class="form-terms">
+									Натискаючи на кнопку я погоджуюсь з
+									<a class="form-terms-link" href="#"
+										>політикою конфіденційності</a
+									>
+								</p>
+							</form>
 						</div>
 						<iframe
 							class="contact-map"
@@ -256,6 +306,53 @@
 		<div class="backdrop is-hidden">
 			<div class="modal">
 				<button class="modal-btn-close" type="button">Close</button>
+				<h2>Замовити дзвінок</h2>
+				<p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+				<form name="modal-form" autocomplete="on" novalidate>
+					<div class="form-field">
+						<label class="form-label visually-hidden" for="user-name"
+							>Ім'я</label
+						>
+						<input
+							class="form-input"
+							type="text"
+							id="user-name"
+							name="user-name"
+							placeholder="Ім'я" />
+					</div>
+
+					<div class="form-field">
+						<label class="form-label visually-hidden" for="user-tel"
+							>Телефон</label
+						>
+						<input
+							class="form-input"
+							type="tel"
+							id="user-tel"
+							name="user-tel"
+							placeholder="Телефон" />
+					</div>
+
+					<div class="form-field">
+						<label class="form-label visually-hidden" for="user-email"
+							>Електронна адреса</label
+						>
+						<input
+							class="form-input"
+							type="email"
+							id="user-email"
+							name="user-email"
+							placeholder="Електронна адреса" />
+					</div>
+
+					<button class="form-button button" type="submit">
+						Замовити дзвінок
+					</button>
+					<p class="form-terms">
+						Натискаючи на кнопку я погоджуюсь з
+						<a class="form-terms-link" href="#">політикою конфіденційності</a>
+					</p>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
