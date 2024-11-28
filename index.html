@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Сучасна пекарня</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./scss/main.min.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -132,6 +132,10 @@
 						<ul class="formats-list">
 							<li class="formats-item">
 								<article class="format-card">
+									<img
+										class="format-image"
+										src="./images/walrus.jpg"
+										alt="Walrus format" />
 									<h3 class="format-title" lang="en">Walrus</h3>
 									<div class="format-text">
 										<p>Площа: до 120 м2</p>
@@ -146,6 +150,10 @@
 							</li>
 							<li class="formats-item">
 								<article class="format-card">
+									<img
+										class="format-image"
+										src="./images/horseshoe.jpg"
+										alt="horseshoe" />
 									<h3 class="format-title" lang="en">Horseshoe</h3>
 									<div class="format-text">
 										<p>Площа: до 25 м2</p>
@@ -157,6 +165,10 @@
 							</li>
 							<li class="formats-item">
 								<article class="format-card">
+									<img
+										class="format-image"
+										src="./images/handlebar.jpg"
+										alt="handlebar" />
 									<h3 class="format-title" lang="en">Handlebar</h3>
 									<div class="format-text">
 										<p>Площа: до 15 м2</p>
@@ -308,7 +320,7 @@
 				<button class="modal-btn-close" type="button">Close</button>
 				<h2>Замовити дзвінок</h2>
 				<p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-				<form name="modal-form" autocomplete="on" novalidate>
+				<form name="modal-form" autocomplete="off">
 					<div class="form-field">
 						<label class="form-label visually-hidden" for="user-name"
 							>Ім'я</label
@@ -318,7 +330,10 @@
 							type="text"
 							id="user-name"
 							name="user-name"
-							placeholder="Ім'я" />
+							placeholder="Ім'я"
+							required
+							minlength="2"
+							maxlength="20" />
 					</div>
 
 					<div class="form-field">
@@ -330,7 +345,9 @@
 							type="tel"
 							id="user-tel"
 							name="user-tel"
-							placeholder="Телефон" />
+							placeholder="Телефон"
+							required
+							pattern="^\+[0-9]{12}" />
 					</div>
 
 					<div class="form-field">
@@ -342,8 +359,20 @@
 							type="email"
 							id="user-email"
 							name="user-email"
-							placeholder="Електронна адреса" />
+							placeholder="Електронна адреса"
+							required />
 					</div>
+					<!-- <div class="checkbox">
+						<input
+							class="checkbox-input"
+							visually-hiden
+							type="checkbox"
+							id="terms-conditions"
+							name="terms-conditions" />
+						<label class="checkbox-label" for="terms-conditions">
+							Я точно погоджуюсь з політикою конфіденційності
+						</label>
+					</div> -->
 
 					<button class="form-button button" type="submit">
 						Замовити дзвінок
