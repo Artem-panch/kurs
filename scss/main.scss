@@ -1,47 +1,28 @@
 @import "./utils/fonts";
-
 @import "./utils/texts";
-
 @import "./utils/variables";
-
-@import "./base";
-
 @import "./utils/utils";
-
-@import "./components/buttons";
-
-@import "./components/links";
-
-@import "./components/chef-card";
-
-@import "./components/format-card";
-
-@import "./components/input";
-
-@import "./layouts/header";
-
-@import "./layouts/hero-section";
-
+@import "./base";
 @import "./utils/mixins";
 
-@import "./layouts/adventages-section";
-
-@import "./layouts/section";
-
-@import "./layouts/traditions-section";
-
-@import "./layouts/chefs-section";
-
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/chef-card";
+@import "./components/format-card";
+@import "./components/input";
 @import "./components/carousel-button";
+@import "./components/pagination";
 
+@import "./layouts/header";
+@import "./layouts/hero-section";
+@import "./layouts/adventages-section";
+@import "./layouts/section";
+@import "./layouts/traditions-section";
+@import "./layouts/chefs-section";
 @import "./layouts/formats-section";
-
 @import "./layouts/address-section";
-
 @import "./layouts/contact-section";
-
 @import "./layouts/footer";
-
+@import "./layouts/mobile-menu";
 @import "./layouts/modal";
-
 @import "./layouts/form-terms";
